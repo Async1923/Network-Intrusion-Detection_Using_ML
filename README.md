@@ -159,11 +159,10 @@ Just follow 3 simple steps :
 
 ![](https://github.com/vicky60629/Network-Intrusion-Detection-System/blob/master/results/2020-06-15%2015_30_02-Window.png)<br>
 
-**If you face any problem :** email me at *vg60629@gmail.com*
+
 
 ### LICENSE
 
-[MIT License](https://github.com/vicky60629/Network-Intrusion-Detection-System/blob/master/LICENSE)
 
 Copyright (c) 2023 Harsh Kumar Gaurav
 
