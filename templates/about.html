@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Team</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+  <link rel="stylesheet" href="static/abo.css">
+  <style>
+    .social-icons {
+    display: flex;
+    justify-content: center;  
+  }
+  .social-icons a {
+    margin-right: 20px;
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+  </style>
+</head> 
+  <body>
+    {% include 'header.html' %}
+  <div class="container-fluid container-custom">
+    <h1 class="page-title">Meet Our Team</h1>
+    <div class="row row-custom justify-content-center">
+      <div class="col-md-6 col-lg-3 mb-4"> 
+        <div class="card card-custom fadeIn">
+          <img src="{{url_for('static',filename='/image/harsh.jpg')}}" class="card-img-top" alt="Person 1">
+          <div class="card-body">
+            <h3 class="card-title" href="https://www.linkedin.com/in/harsh-kumar-gaurav198/">Harsh Kumar Gaurav </h3>
+            <h5 class="card-subtitle">Reg:19105125003</h5>
+            <p class="card-text">Roll Number: 19-CS-32</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4"> 
+        <div class="card card-custom fadeIn">
+          <img src="{{url_for('static',filename='/image/mrinal.jpg')}}" class="card-img-top" alt="Person 2">
+          <div class="card-body">
+            <h3 class="card-title">Mrinal Prakash</h3>
+            <h5 class="card-subtitle">Reg: 19105125020</h5>
+            <p class="card-text">Roll Number: 19-CS-43</p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="col-md-6 col-lg-3 mb-4"> 
+        <div class="card card-custom fadeIn">
+          <img src="{{url_for('static',filename='/image/vikash.jpeg')}}" class="card-img-top" alt="Person 3">
+          <div class="card-body">
+            <h3 class="card-title">Vikash Raj</h3>
+            <h5 class="card-subtitle">Reg: 19105125056</h5>
+            <p class="card-text">Roll Number: 19-CS-50</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4"> 
+        <div class="card card-custom fadeIn">
+          <img src="{{url_for('static',filename='/image/amar.jpg')}}" class="card-img-top" alt="Person 4">
+          <div class="card-body">
+            <h3 class="card-title">Amar Kumar Sharma</h3>
+            <h5 class="card-subtitle">Reg: 19105125055</h5>
+            <p class="card-text">Roll Number: 19-CS-32</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+   <div>
+    <h1 class="page-title">Mentor</h1>
+   
+    <div class="center"> 
+      
+      <div class="card card-custom fadeIn">
+        <img src="{{url_for('static',filename='/image/ravi.jpeg')}}" class="card-img-top" alt="Person 5">
+          <div class="card-body">
+            <h3 class="card-title" >Ravi Kumar</h3>
+            <h5 class="card-subtitle">Asst. Professor</h5>
+            <p class="card-text">Department of CSE</p>
+            <p class="card-text">Rashtrakavi Ramdhari Singh Dinkar College of Engineering, Begusarai</p>
+          </div>
+   
+      </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+<!-- Bootstrap JS -->
+{% include 'footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

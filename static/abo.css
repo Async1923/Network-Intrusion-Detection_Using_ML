@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  .page-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .row-custom {
+    justify-content: center;
+  }
+
+  .card-custom {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-custom:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 300px;
+    
+    object-fit: cover;
+  }
+
+  .card-body {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+
+  .card-subtitle {
+    font-size: 22px;
+    /* color: #888; */
+    color: black;
+    margin-bottom: 10px;
+  }
+  .card-text {
+    font-size: 20px;
+    /* color: #555; */
+    color: black  ;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;  
+  }
+  .social-icons a {
+    margin-right: 20px;
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+  .social-icons{
+    padding-top: 250px;
+    padding-left: 50px;
+    
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 38%;
+    padding-right: 38%;
+    
+}

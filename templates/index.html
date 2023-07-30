@@ -1,71 +1,87 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Network Intrusion Detection System</title>
-  <link rel="stylesheet" href="static/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIDS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/hom1.css">
+  <style>
+    .jumbotron {
+      background-color: #343a40;
+      color: #fff;
+      padding: 2rem;
+    }
+    .jumbotron h1 {
+      font-size: 3.5rem;
+    }
+    .jumbotron p {
+      font-size: 1.2rem;
+    }
+  </style>
 </head>
 
 <body>
- <div class="login">
-	<h1 style="color:blue;">Network Intrusion Detection System</h1>
+<!-- Bootstrap Navbar -->
+  {% include 'header.html' %} 
+  <!-- Header -->
+<div class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+      <h1 class="display-4">Intrusion Detection System</h1>
+      <p class="lead">A Comprehensive Guide How To Track And Prevent</p>
+  </div>
+</div>
+<main>
+    <section class="features">
+    <h2></h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="{{url_for('static',filename='/image/R.jpeg')}}" alt="Feature 1">
+        <h3>What is Intrusion Detection System (IDS)?</h3>
+        <p>An Intrusion Detection System (IDS) is a vital cybersecurity tool designed to proactively monitor and analyze network traffic..... </p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="{{url_for('static',filename='/image/R.jpeg')}}" alt="Feature 2">
+        <h3>Types of Intrusion Detection System (IDS)?</h3>
+        <p>It can be catogeries into 2 types. NIDS (Network based Intrusion System) & (HIDS) Host based Intrusion System</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+      <div class="card">
+          <img src="{{url_for('static',filename='/image/R.jpeg')}}" alt="Feature 1">
+          <h3>Need of Intrusion Detection System (IDS)?</h3>
+          <p>To protect your ditital prsence, digital activity ,profile and digital footptint means anything related to internet activity.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="{{url_for('static',filename='/image/R.jpeg')}}" alt="Feature 2">
+          <h3>How to track the Intrusion on your system?</h3>
+          <p>You can track using antivirus and also you can prevent that intrusions.</p>
+          <a href="{{ url_for('prediction') }}" class="btn">Track the Intrusion</a>
+        </div>
+        <div class="card">
+          <img src="{{url_for('static',filename='/image/R.jpeg')}}" alt="Feature 1">
+          <h3>Seafty precaution to prevent from intrusion</h3>
+          <p>Follow steps to prevent your system from hacker and keep ypur device healthy.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="{{url_for('static',filename='/image/R.jpeg')}}" alt="Feature 2">
+          <h3>New feature Comming soon.</h3>
+          <p>Kindly wait, We will release some new feature ASAP. </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      
+      <!-- Add more cards for additional features -->
+    </div>
+  </section>
+</main>
 
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-        <label for="attack">Attack:</label>
-        <select id="attack" name="attack">
-          <option value="0">Other</option>
-          <option value="1">neptune</option>
-          <option value="2">normal</option>
-          <option value="3">satan</option>
-        </select><br><br>
 
-        <label for="count">Number of connections to the same destination host as the current connection in the past two seconds :</label>
-    	<input type="text" name="count" placeholder="count" required="required" /><br><br>
-
-    	<label for="dst_host_diff_srv_rate">The percentage of connections that were to different services, among the connections aggregated in dst_host_count :</label>
-        <input type="text" name="dst_host_diff_srv_rate" placeholder="dst_host_diff_srv_rate" required="required" /><br><br>
-
-        <label for="dst_host_same_src_port_rate">The percentage of connections that were to the same source port, among the connections aggregated in dst_host_srv_count :</label>
-		<input type="text" name="dst_host_same_src_port_rate" placeholder="dst_host_same_src_port_rate" required="required" /><br><br>
-
-		<label for="dst_host_same_srv_rate">The percentage of connections that were to the same service, among the connections aggregated in dst_host_count :</label>
-		<input type="text" name="dst_host_same_srv_rate" placeholder="dst_host_same_srv_rate" required="required" /><br><br>
-
-		<label for="dst_host_srv_count">Number of connections having the same port number :</label>
-		<input type="text" name="dst_host_srv_count" placeholder="dst_host_srv_count" required="required" /><br><br>
-
-		<label for="flag">Status of the connection –Normal or Error :</label>
-		<select id="flag" name="flag">
-          <option value="0">Other</option>
-          <option value="1">S0</option>
-          <option value="2">SF</option>
-        </select><br><br>
-
-        <label for="last_flag">Last Flag :</label>
-    	<input type="text" name="last_flag" placeholder="last_flag" required="required" /><br><br>
-
-    	<label for="logged_in">1 if successfully logged in; 0 otherwise :</label>
-        <input type="text" name="logged_in" placeholder="logged_in" required="required" /><br><br>
-
-    	<label for="same_srv_rate">The percentage of connections that were to the same service, among the connections aggregated in count :</label>
-        <input type="text" name="same_srv_rate" placeholder="same_srv_rate" required="required" /><br><br>
-
-        <label for="serror_rate">The percentage of connections that have activated the flag (4) s0, s1, s2 or s3, among the connections aggregated in count :</label>
-        <input type="text" name="serror_rate" placeholder="serror_rate" required="required" /><br><br>
-
-		<label for="service_http">Destination network service used http or not :</label>
-		<select id="service_http" name="service_http">
-          <option value="0">No</option>
-          <option value="1">Yes</option>
-        </select><br><br>
-
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
-   <br>
-    {% if output %}
-       <h3> Attack Class should be <b style="color:red;">{{ output }}</b>  </h3>
-    {% endif %}
-   </div>
+<!-- footer -->
+{% include 'footer.html' %}
+<!-- Bootstrap Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="static/script.js"></script>
 </body>
 </html>

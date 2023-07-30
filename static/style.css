@@ -31,3 +31,90 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+/* main css */
+.center{
+  padding-left: 250px;
+  padding-right: 250px;
+
+}
+.cent{
+   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer css*/
+
+/* footer{
+   margin-top: 15px;
+ }
+ 
+ .foot-panel1{
+   background-color: #37475a;
+   color: white;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.85rem;
+ }
+ 
+ .foot-panel2{
+   background-color: #222f3d;
+   color: white;
+   height: 300px;
+   display:flex;
+   justify-content: space-evenly;
+ }
+ ul{
+   margin-top: 20px;
+ }
+ .navbar {
+  background-color: #007bff;
+  padding: 15px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+  transform: scale(1.1);
+}
+.page-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #007bff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+ */

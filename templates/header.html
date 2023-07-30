@@ -1,0 +1,83 @@
+<style>
+  .page-title {
+text-align: center;
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 40px;
+color: #007bff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.row-custom {
+justify-content: center;
+}
+.navbar {
+position: sticky;
+background-color: #007bff;
+padding: 15px;
+}
+
+.navbar-brand {
+font-size: 24px;
+font-weight: bold;
+color: #fff;
+}
+
+.navbar-nav {
+margin-left: auto;
+}
+
+.nav-item {
+margin-right: 15px;
+}
+
+.nav-link {
+color: #fff;
+font-size: 18px;
+transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+color: #ffc107;
+transform: scale(1.1);
+}
+.footer {
+background-color: #343a40;
+color: #fff;
+padding: 20px 0;
+}
+.footer p {
+margin: 0;
+}
+</style>
+<header>
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark " data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ url_for('home') }}"> NIDS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('prediction') }}">Prediction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('pandas_profiling') }}">Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('scan_here') }}">Scan Here</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('about_us') }}">About US</a>
+        </li>
+      </ul>
+  </div>
+</nav>
+</header>
+  
